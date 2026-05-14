@@ -1,25 +1,4 @@
-using System;
-using System.Collections.Generic;
 
-namespace GarageManagementSystem
-{
-    public interface IVehicle
-    {
-        void PerformMaintenance();
-    }
-
-    public abstract class Vehicle : IVehicle
-    {
-        public string LicensePlate { get; protected set; }
-        public string Model { get; set; }
-
-        public abstract void CalculateServiceCost();
-
-        public virtual void PerformMaintenance()
-        {
-            Console.WriteLine($"\n[صيانة]: بدء العمل على المركبة {Model}...");
-        }
-    }
 
     public class Car : Vehicle
     {
