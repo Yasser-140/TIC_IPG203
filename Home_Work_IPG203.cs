@@ -99,7 +99,7 @@ namespace GarageManagementSystem
 
             myGarage.ProcessAll();
 
-            Console.WriteLine("\n------------------------------------------");
+            Console.WriteLine("\n-------------------------------------------");
             Console.WriteLine($"إجمالي المركبات: {GarageStats.TotalVehiclesProcessed}");
             Console.WriteLine("-------------------------------------------");
             Console.ReadKey();
